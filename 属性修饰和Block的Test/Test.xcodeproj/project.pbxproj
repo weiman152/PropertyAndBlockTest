@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B31BB1E24A840880089C69A /* BlockAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB1D24A840880089C69A /* BlockAController.m */; };
+		3B31BB2124A840970089C69A /* BlockBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB2024A840970089C69A /* BlockBController.m */; };
+		3B31BB2424A889EF0089C69A /* LastPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB2324A889EF0089C69A /* LastPageViewController.m */; };
+		3B31BB2724A88D530089C69A /* LastCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB2624A88D530089C69A /* LastCell.m */; };
 		3B3FEB44249A193000CB1BD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB43249A193000CB1BD2 /* AppDelegate.m */; };
 		3B3FEB47249A193000CB1BD2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB46249A193000CB1BD2 /* SceneDelegate.m */; };
 		3B3FEB4A249A193000CB1BD2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB49249A193000CB1BD2 /* ViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -18,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B31BB1C24A840880089C69A /* BlockAController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockAController.h; sourceTree = "<group>"; };
+		3B31BB1D24A840880089C69A /* BlockAController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockAController.m; sourceTree = "<group>"; };
+		3B31BB1F24A840970089C69A /* BlockBController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockBController.h; sourceTree = "<group>"; };
+		3B31BB2024A840970089C69A /* BlockBController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockBController.m; sourceTree = "<group>"; };
+		3B31BB2224A889EF0089C69A /* LastPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastPageViewController.h; sourceTree = "<group>"; };
+		3B31BB2324A889EF0089C69A /* LastPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastPageViewController.m; sourceTree = "<group>"; };
+		3B31BB2524A88D530089C69A /* LastCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LastCell.h; sourceTree = "<group>"; };
+		3B31BB2624A88D530089C69A /* LastCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LastCell.m; sourceTree = "<group>"; };
 		3B3FEB3F249A193000CB1BD2 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3FEB42249A193000CB1BD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B3FEB43249A193000CB1BD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +84,14 @@
 				3B3FEB49249A193000CB1BD2 /* ViewController.m */,
 				3BA1862A24A0916000A2727F /* BlockTestViewController.h */,
 				3BA1862B24A0916000A2727F /* BlockTestViewController.m */,
+				3B31BB1D24A840880089C69A /* BlockAController.m */,
+				3B31BB1F24A840970089C69A /* BlockBController.h */,
+				3B31BB1C24A840880089C69A /* BlockAController.h */,
+				3B31BB2024A840970089C69A /* BlockBController.m */,
+				3B31BB2224A889EF0089C69A /* LastPageViewController.h */,
+				3B31BB2324A889EF0089C69A /* LastPageViewController.m */,
+				3B31BB2524A88D530089C69A /* LastCell.h */,
+				3B31BB2624A88D530089C69A /* LastCell.m */,
 				3B3FEB4B249A193000CB1BD2 /* Main.storyboard */,
 				3B3FEB4E249A193200CB1BD2 /* Assets.xcassets */,
 				3B3FEB50249A193200CB1BD2 /* LaunchScreen.storyboard */,
@@ -152,8 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3FEB4A249A193000CB1BD2 /* ViewController.m in Sources */,
+				3B31BB1E24A840880089C69A /* BlockAController.m in Sources */,
 				3B3FEB44249A193000CB1BD2 /* AppDelegate.m in Sources */,
+				3B31BB2424A889EF0089C69A /* LastPageViewController.m in Sources */,
 				3B3FEB55249A193200CB1BD2 /* main.m in Sources */,
+				3B31BB2124A840970089C69A /* BlockBController.m in Sources */,
+				3B31BB2724A88D530089C69A /* LastCell.m in Sources */,
 				3B3FEB47249A193000CB1BD2 /* SceneDelegate.m in Sources */,
 				3BA1862C24A0916000A2727F /* BlockTestViewController.m in Sources */,
 			);

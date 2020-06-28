@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "BlockAController.h"
+#import "LastPageViewController.h"
 @interface ViewController ()
 
 @property(atomic,strong)NSString * name;
@@ -35,6 +36,16 @@
 //    [self test_p];
 //    [self test_a];
     
+}
+- (IBAction)sasasasas:(id)sender {
+    LastPageViewController *lastVC = [LastPageViewController instance];
+    [self.navigationController pushViewController:lastVC animated:YES];
+}
+
+- (IBAction)blockTransferValue:(id)sender {
+    
+    BlockAController * aVC = [BlockAController instance];
+    [self.navigationController pushViewController:aVC animated:YES];
 }
 
 -(void)test_a {
