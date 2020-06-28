@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,13 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^BlockType)(NSString * name);
 
-@interface BlockBController : UIViewController
+@interface BlockBController : BaseViewController
 
 @property(nonatomic, weak)id<BlockBControllerDelegate>delegate;
 
 @property(nonatomic, copy)BlockType block1;
-
-+(instancetype)instance;
 
 @end
 

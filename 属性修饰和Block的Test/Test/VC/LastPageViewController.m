@@ -21,12 +21,6 @@
     [self.view addSubview:self.TAB];
 }
 
-+(instancetype)instance {
-    UIStoryboard * storyB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    LastPageViewController * vc = [storyB instantiateViewControllerWithIdentifier:@"LastPageViewController"];
-    return vc;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
 
     return 10;

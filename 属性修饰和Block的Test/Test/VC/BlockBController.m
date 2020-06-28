@@ -20,12 +20,6 @@
     
 }
 
-+(instancetype)instance {
-    UIStoryboard * storyB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    BlockBController * vc = [storyB instantiateViewControllerWithIdentifier:@"BlockBController"];
-    return vc;
-}
-
 - (IBAction)OKBtnClick:(id)sender {
     
     if (_input.text.length > 0) {

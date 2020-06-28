@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LastPageViewController : UIViewController
+@interface LastPageViewController : BaseViewController
 
-+(instancetype)instance;
 
 @end
 

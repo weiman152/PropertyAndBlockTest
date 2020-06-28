@@ -1,5 +1,5 @@
 //
-//  BlockAController.h
+//  BaseViewController.h
 //  Test
 //
 //  Created by wenhuanhuan on 2020/6/28.
@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BlockAController : BaseViewController
+@interface BaseViewController : UIViewController
+
++(instancetype)instance;
 
 @end
 

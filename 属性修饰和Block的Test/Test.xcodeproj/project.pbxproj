@@ -13,6 +13,8 @@
 		3B31BB3924A8976B0089C69A /* BlockTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB3024A8976B0089C69A /* BlockTestViewController.m */; };
 		3B31BB3A24A8976B0089C69A /* BlockAController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB3124A8976B0089C69A /* BlockAController.m */; };
 		3B31BB3B24A8976B0089C69A /* BlockBController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB3524A8976B0089C69A /* BlockBController.m */; };
+		3B31BB3E24A8991F0089C69A /* BlockCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB3D24A8991F0089C69A /* BlockCController.m */; };
+		3B31BB4124A8998B0089C69A /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B31BB4024A8998B0089C69A /* BaseViewController.m */; };
 		3B3FEB44249A193000CB1BD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB43249A193000CB1BD2 /* AppDelegate.m */; };
 		3B3FEB47249A193000CB1BD2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB46249A193000CB1BD2 /* SceneDelegate.m */; };
 		3B3FEB4D249A193000CB1BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FEB4B249A193000CB1BD2 /* Main.storyboard */; };
@@ -34,6 +36,10 @@
 		3B31BB3324A8976B0089C69A /* BlockTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTestViewController.h; sourceTree = "<group>"; };
 		3B31BB3424A8976B0089C69A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3B31BB3524A8976B0089C69A /* BlockBController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockBController.m; sourceTree = "<group>"; };
+		3B31BB3C24A8991F0089C69A /* BlockCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockCController.h; sourceTree = "<group>"; };
+		3B31BB3D24A8991F0089C69A /* BlockCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockCController.m; sourceTree = "<group>"; };
+		3B31BB3F24A8998B0089C69A /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		3B31BB4024A8998B0089C69A /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		3B3FEB3F249A193000CB1BD2 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B3FEB42249A193000CB1BD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3B3FEB43249A193000CB1BD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,12 +77,16 @@
 			children = (
 				3B31BB3424A8976B0089C69A /* ViewController.h */,
 				3B31BB2F24A8976B0089C69A /* ViewController.m */,
+				3B31BB3F24A8998B0089C69A /* BaseViewController.h */,
+				3B31BB4024A8998B0089C69A /* BaseViewController.m */,
 				3B31BB3324A8976B0089C69A /* BlockTestViewController.h */,
 				3B31BB3024A8976B0089C69A /* BlockTestViewController.m */,
 				3B31BB2D24A8976B0089C69A /* BlockAController.h */,
 				3B31BB3124A8976B0089C69A /* BlockAController.m */,
 				3B31BB2E24A8976B0089C69A /* BlockBController.h */,
 				3B31BB3524A8976B0089C69A /* BlockBController.m */,
+				3B31BB3C24A8991F0089C69A /* BlockCController.h */,
+				3B31BB3D24A8991F0089C69A /* BlockCController.m */,
 				3B31BB3224A8976B0089C69A /* LastPageViewController.h */,
 				3B31BB2C24A8976B0089C69A /* LastPageViewController.m */,
 			);
@@ -188,6 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B31BB3824A8976B0089C69A /* ViewController.m in Sources */,
+				3B31BB3E24A8991F0089C69A /* BlockCController.m in Sources */,
+				3B31BB4124A8998B0089C69A /* BaseViewController.m in Sources */,
 				3B31BB3924A8976B0089C69A /* BlockTestViewController.m in Sources */,
 				3B3FEB44249A193000CB1BD2 /* AppDelegate.m in Sources */,
 				3B31BB3624A8976B0089C69A /* LastCell.m in Sources */,

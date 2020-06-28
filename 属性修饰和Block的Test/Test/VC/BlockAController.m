@@ -22,13 +22,6 @@
     
 }
 
-+(instancetype)instance {
-    UIStoryboard * storyB = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    BlockAController * vc = [storyB instantiateViewControllerWithIdentifier:@"BlockAController"];
-    return vc;
-}
-
-
 - (IBAction)gotoB:(id)sender {
     
     BlockBController * bVC = [BlockBController instance];

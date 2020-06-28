@@ -1,5 +1,5 @@
 //
-//  BlockAController.h
+//  BlockCController.h
 //  Test
 //
 //  Created by wenhuanhuan on 2020/6/28.
@@ -11,7 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BlockAController : BaseViewController
+@interface BlockCController : BaseViewController
+
 
 @end
 

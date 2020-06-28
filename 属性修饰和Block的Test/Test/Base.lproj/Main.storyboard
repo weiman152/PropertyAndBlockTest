@@ -62,9 +62,10 @@
                                 <state key="normal" title="Block传递事件"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9b-J2-A0i">
-                                <rect key="frame" x="20" y="414" width="374" height="45"/>
+                                <rect key="frame" x="20" y="380" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.56546753859999999" green="0.89443300830000005" blue="0.71305711910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="ukQ-Qc-dmV"/>
+                                    <constraint firstAttribute="height" constant="44" id="ukQ-Qc-dmV"/>
                                 </constraints>
                                 <state key="normal" title="循环引用"/>
                                 <connections>
@@ -86,7 +87,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5XF-xf-r2w" secondAttribute="trailing" constant="20" id="fqm-Jd-Pv3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L9b-J2-A0i" secondAttribute="trailing" constant="20" id="lpL-bg-SJ2"/>
                             <constraint firstItem="5XF-xf-r2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="rtR-jY-yOE"/>
-                            <constraint firstItem="L9b-J2-A0i" firstAttribute="top" secondItem="JXG-6K-D2M" secondAttribute="bottom" constant="54" id="tlJ-oA-hGu"/>
+                            <constraint firstItem="L9b-J2-A0i" firstAttribute="top" secondItem="JXG-6K-D2M" secondAttribute="bottom" constant="20" id="tlJ-oA-hGu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -95,6 +96,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+        </scene>
+        <!--C页面-->
+        <scene sceneID="MEQ-Zn-dh2">
+            <objects>
+                <viewController storyboardIdentifier="BlockCController" title="C页面" id="npJ-j1-vzs" customClass="BlockCController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S6a-b8-9Qc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ITn-CF-vzu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhi-5K-Mp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163" y="751"/>
         </scene>
         <!--LastVC-->
         <scene sceneID="voL-e1-eTW">
