@@ -28,7 +28,7 @@
     bVC.delegate = self;
     __weak BlockAController * weakSelf = self;
     bVC.block1 = ^(NSString * name) {
-        self.blockValue.text = name;
+        weakSelf.blockValue.text = name;
     };
     [self.navigationController pushViewController:bVC animated:YES];
     

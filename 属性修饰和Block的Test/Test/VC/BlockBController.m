@@ -28,10 +28,10 @@
             [self.delegate delegateB:_input.text];
             
         }
-        
         if (self.block1) {
             self.block1(_input.text);
         }
+        
         [self.navigationController popViewControllerAnimated:YES];
     } else {
         NSLog(@"没有值");

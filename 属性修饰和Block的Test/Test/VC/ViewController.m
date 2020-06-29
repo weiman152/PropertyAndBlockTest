@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "BlockAController.h"
+#import "BlockCController.h"
 #import "LastPageViewController.h"
 @interface ViewController ()
 
@@ -37,11 +38,18 @@
 //    [self test_a];
     
 }
-- (IBAction)sasasasas:(id)sender {
+- (IBAction)circleTest:(id)sender {
     LastPageViewController *lastVC = [LastPageViewController instance];
     [self.navigationController pushViewController:lastVC animated:YES];
 }
 
+//传递事件
+- (IBAction)eventTest:(id)sender {
+    BlockCController * cVC = [BlockCController instance];
+    [self.navigationController pushViewController:cVC animated:YES];
+}
+
+//传递值
 - (IBAction)blockTransferValue:(id)sender {
     
     BlockAController * aVC = [BlockAController instance];
