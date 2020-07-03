@@ -21,7 +21,7 @@
 @implementation BlockCCell
 
 +(instancetype)cellWithTableView:(UITableView *)tableView {
-    NSString * identifier = @"BlockCCell";
+    static NSString * identifier = @"BlockCCell";
     BlockCCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     return cell;
 }

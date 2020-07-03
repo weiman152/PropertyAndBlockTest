@@ -10,6 +10,8 @@
 #import "BlockAController.h"
 #import "BlockCController.h"
 #import "LastPageViewController.h"
+#import "MemoryController.h"
+
 @interface ViewController ()
 
 @property(atomic,strong)NSString * name;
@@ -38,6 +40,13 @@
 //    [self test_a];
     
 }
+
+//内存探究
+- (IBAction)memoryTest:(id)sender {
+    MemoryController * mVC = [MemoryController instance];
+    [self.navigationController pushViewController:mVC animated:YES];
+}
+
 - (IBAction)circleTest:(id)sender {
     LastPageViewController *lastVC = [LastPageViewController instance];
     [self.navigationController pushViewController:lastVC animated:YES];

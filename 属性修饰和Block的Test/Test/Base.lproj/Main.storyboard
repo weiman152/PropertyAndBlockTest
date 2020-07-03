@@ -75,6 +75,17 @@
                                     <action selector="circleTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cc-rF-YaB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcH-MP-ITl">
+                                <rect key="frame" x="20" y="444" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.56546753859999999" green="0.89443300830000005" blue="0.71305711910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="c4e-kp-eG6"/>
+                                </constraints>
+                                <state key="normal" title="Block内存探究"/>
+                                <connections>
+                                    <action selector="memoryTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W22-W8-Evg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -84,11 +95,14 @@
                             <constraint firstItem="L9b-J2-A0i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="DJF-CZ-1tO"/>
                             <constraint firstItem="JXG-6K-D2M" firstAttribute="leading" secondItem="9sL-A9-iGu" secondAttribute="leading" id="Kk0-D8-bfJ"/>
                             <constraint firstItem="9sL-A9-iGu" firstAttribute="top" secondItem="5XF-xf-r2w" secondAttribute="bottom" constant="20" id="L7A-hL-voF"/>
+                            <constraint firstItem="xcH-MP-ITl" firstAttribute="top" secondItem="L9b-J2-A0i" secondAttribute="bottom" constant="20" id="LfP-f4-vBd"/>
                             <constraint firstItem="JXG-6K-D2M" firstAttribute="trailing" secondItem="9sL-A9-iGu" secondAttribute="trailing" id="Rqj-bp-zxm"/>
                             <constraint firstItem="9sL-A9-iGu" firstAttribute="leading" secondItem="5XF-xf-r2w" secondAttribute="leading" id="Vb3-KR-G3L"/>
                             <constraint firstItem="9sL-A9-iGu" firstAttribute="trailing" secondItem="5XF-xf-r2w" secondAttribute="trailing" id="Wav-oY-ktb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5XF-xf-r2w" secondAttribute="trailing" constant="20" id="fqm-Jd-Pv3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L9b-J2-A0i" secondAttribute="trailing" constant="20" id="lpL-bg-SJ2"/>
+                            <constraint firstItem="xcH-MP-ITl" firstAttribute="leading" secondItem="L9b-J2-A0i" secondAttribute="leading" id="lsM-m2-WUx"/>
+                            <constraint firstItem="xcH-MP-ITl" firstAttribute="trailing" secondItem="L9b-J2-A0i" secondAttribute="trailing" id="maO-9Z-zEy"/>
                             <constraint firstItem="5XF-xf-r2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="rtR-jY-yOE"/>
                             <constraint firstItem="L9b-J2-A0i" firstAttribute="top" secondItem="JXG-6K-D2M" secondAttribute="bottom" constant="20" id="tlJ-oA-hGu"/>
                         </constraints>
@@ -199,6 +213,115 @@
             </objects>
             <point key="canvasLocation" x="1003" y="757"/>
         </scene>
+        <!--Block内存探究-->
+        <scene sceneID="Abe-5L-HeW">
+            <objects>
+                <viewController storyboardIdentifier="MemoryController" title="Block内存探究" id="nsb-6O-oN1" customClass="MemoryController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WGf-7O-gc0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-VJ-O9b">
+                                <rect key="frame" x="20" y="134" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dHG-gb-UEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="不访问任何变量：全局区Block"/>
+                                <connections>
+                                    <action selector="test1:" destination="nsb-6O-oN1" eventType="touchUpInside" id="ecq-EW-KE4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSC-xy-ApT">
+                                <rect key="frame" x="20" y="272" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Viy-wI-yd5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="访问局部变量：MRC栈区，ARC堆区Block"/>
+                                <connections>
+                                    <action selector="test2:" destination="nsb-6O-oN1" eventType="touchUpInside" id="kSV-Sl-FfA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y33-T1-Edc">
+                                <rect key="frame" x="20" y="341" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="NgG-ik-tYd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <state key="normal" title="访问全局变量：MRC栈区，ARC堆区Block"/>
+                                <connections>
+                                    <action selector="test3:" destination="nsb-6O-oN1" eventType="touchUpInside" id="wpR-PR-H2b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYy-3k-ITC">
+                                <rect key="frame" x="20" y="410" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eLb-ZD-3Lj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="全局变量的Block：全局区"/>
+                                <connections>
+                                    <action selector="test5:" destination="nsb-6O-oN1" eventType="touchUpInside" id="nfY-RH-W8d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3u-5b-AvZ">
+                                <rect key="frame" x="20" y="479" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="arx-yP-Eru"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="全局变量Block：堆区"/>
+                                <connections>
+                                    <action selector="test6:" destination="nsb-6O-oN1" eventType="touchUpInside" id="WL5-O4-BCV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0d-0J-pnh">
+                                <rect key="frame" x="20" y="203" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.56862745100000001" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5lv-Sp-u6o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="访问静态全局变量: 全局区Block"/>
+                                <connections>
+                                    <action selector="test4:" destination="nsb-6O-oN1" eventType="touchUpInside" id="SN7-fl-ghR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="S3u-5b-AvZ" firstAttribute="trailing" secondItem="dYy-3k-ITC" secondAttribute="trailing" id="D3x-3S-n2p"/>
+                            <constraint firstItem="dYy-3k-ITC" firstAttribute="top" secondItem="Y33-T1-Edc" secondAttribute="bottom" constant="25" id="FTp-wn-waV"/>
+                            <constraint firstItem="S3u-5b-AvZ" firstAttribute="leading" secondItem="dYy-3k-ITC" secondAttribute="leading" id="MrT-9K-WZl"/>
+                            <constraint firstItem="r0d-0J-pnh" firstAttribute="top" secondItem="hq5-VJ-O9b" secondAttribute="bottom" constant="25" id="Qs1-cW-AHq"/>
+                            <constraint firstItem="hq5-VJ-O9b" firstAttribute="top" secondItem="2rx-tI-Ljt" secondAttribute="top" constant="90" id="c03-J7-cKF"/>
+                            <constraint firstItem="2rx-tI-Ljt" firstAttribute="trailing" secondItem="hq5-VJ-O9b" secondAttribute="trailing" constant="20" id="ceM-Yu-DGZ"/>
+                            <constraint firstItem="dYy-3k-ITC" firstAttribute="trailing" secondItem="r0d-0J-pnh" secondAttribute="trailing" id="dvV-eG-qpk"/>
+                            <constraint firstItem="hq5-VJ-O9b" firstAttribute="leading" secondItem="2rx-tI-Ljt" secondAttribute="leading" constant="20" id="e4z-4g-cFM"/>
+                            <constraint firstItem="XSC-xy-ApT" firstAttribute="leading" secondItem="hq5-VJ-O9b" secondAttribute="leading" id="g1E-eN-Pb3"/>
+                            <constraint firstItem="dYy-3k-ITC" firstAttribute="leading" secondItem="r0d-0J-pnh" secondAttribute="leading" id="g6h-tM-1y1"/>
+                            <constraint firstItem="Y33-T1-Edc" firstAttribute="leading" secondItem="XSC-xy-ApT" secondAttribute="leading" id="izH-O7-du7"/>
+                            <constraint firstItem="XSC-xy-ApT" firstAttribute="trailing" secondItem="hq5-VJ-O9b" secondAttribute="trailing" id="jx3-uO-y9m"/>
+                            <constraint firstItem="r0d-0J-pnh" firstAttribute="trailing" secondItem="Y33-T1-Edc" secondAttribute="trailing" id="mCW-C6-lWw"/>
+                            <constraint firstItem="S3u-5b-AvZ" firstAttribute="top" secondItem="dYy-3k-ITC" secondAttribute="bottom" constant="25" id="ogs-Hy-kbC"/>
+                            <constraint firstItem="r0d-0J-pnh" firstAttribute="leading" secondItem="Y33-T1-Edc" secondAttribute="leading" id="rnB-b1-IdA"/>
+                            <constraint firstItem="Y33-T1-Edc" firstAttribute="trailing" secondItem="XSC-xy-ApT" secondAttribute="trailing" id="t32-2V-q1b"/>
+                            <constraint firstItem="Y33-T1-Edc" firstAttribute="top" secondItem="XSC-xy-ApT" secondAttribute="bottom" constant="25" id="y7R-KT-vaO"/>
+                            <constraint firstItem="XSC-xy-ApT" firstAttribute="top" secondItem="r0d-0J-pnh" secondAttribute="bottom" constant="25" id="y9u-z7-kn7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2rx-tI-Ljt"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lm3-w5-eop" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791.304347826087" y="760.71428571428567"/>
+        </scene>
         <!--BlockTest-->
         <scene sceneID="UR5-Yg-VyD">
             <objects>
@@ -212,13 +335,13 @@
                                 <attributedString key="attributedText">
                                     <fragment content="好好学习，天天向上！ ">
                                         <attributes>
-                                            <font key="NSFont" size="36" name=".PingFangSC-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="36"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="study hard and make progress every day！">
                                         <attributes>
-                                            <font key="NSFont" size="18" name=".PingFangSC-Regular"/>
+                                            <font key="NSFont" metaFont="system" size="18"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>

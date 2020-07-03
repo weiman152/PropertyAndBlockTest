@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic,copy)void(^loadCell)(NSString *name);
 
 + (instancetype)loadLastWithTableView:(UITableView *)tableView;
+-(void)set:(NSString *)name;
 
 @end
 

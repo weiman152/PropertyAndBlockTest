@@ -30,16 +30,19 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         [self.contentView addSubview:self.btnClick];
-        self.btnClick.frame = CGRectMake(0, 0, 100, 50);
-        self.btnClick.center = self.center;
+        self.btnClick.frame = CGRectMake(20, 10, 100, 40);
     }
     return self;
 }
+
+-(void)set:(NSString *)name {
+    [self.btnClick setTitle:name forState:UIControlStateNormal];
+}
+
 - (void)btnClickAction{
 
     if (self.loadCell) {
-
-        self.loadCell(@"1234");
+        self.loadCell(self.btnClick.titleLabel.text);
     }
 
 }

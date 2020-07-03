@@ -22,6 +22,7 @@
 		3B3FEB4F249A193200CB1BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FEB4E249A193200CB1BD2 /* Assets.xcassets */; };
 		3B3FEB52249A193200CB1BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FEB50249A193200CB1BD2 /* LaunchScreen.storyboard */; };
 		3B3FEB55249A193200CB1BD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB54249A193200CB1BD2 /* main.m */; };
+		3B4D98FA24AC80D70014BDDB /* MemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D98F924AC80D70014BDDB /* MemoryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		3B3FEB51249A193200CB1BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B3FEB53249A193200CB1BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B3FEB54249A193200CB1BD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B4D98F824AC80D70014BDDB /* MemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryController.h; sourceTree = "<group>"; };
+		3B4D98F924AC80D70014BDDB /* MemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +72,8 @@
 		3B31BB2824A8976B0089C69A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3B31BB2924A8976B0089C69A /* LastCell.m */,
 				3B31BB2A24A8976B0089C69A /* LastCell.h */,
+				3B31BB2924A8976B0089C69A /* LastCell.m */,
 				3B31BB4224A98D740089C69A /* BlockCCell.h */,
 				3B31BB4324A98D740089C69A /* BlockCCell.m */,
 			);
@@ -94,6 +97,8 @@
 				3B31BB3D24A8991F0089C69A /* BlockCController.m */,
 				3B31BB3224A8976B0089C69A /* LastPageViewController.h */,
 				3B31BB2C24A8976B0089C69A /* LastPageViewController.m */,
+				3B4D98F824AC80D70014BDDB /* MemoryController.h */,
+				3B4D98F924AC80D70014BDDB /* MemoryController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				3B31BB3B24A8976B0089C69A /* BlockBController.m in Sources */,
 				3B31BB4424A98D740089C69A /* BlockCCell.m in Sources */,
 				3B3FEB55249A193200CB1BD2 /* main.m in Sources */,
+				3B4D98FA24AC80D70014BDDB /* MemoryController.m in Sources */,
 				3B3FEB47249A193000CB1BD2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
