@@ -144,6 +144,15 @@ static NSString * name = @"xcode";
     NSLog(@"%@",block);
     block();
     printf("\n\n");
+    
+    NSLog(@"--访问局部变量的弱引用block");
+    __block int static_k = 3;
+    __weak void (^block2)(void) = ^{
+        static_k++;
+    };
+    block2();
+    NSLog(@"block2 = %@",block2);
+    printf("\n\n");
 }
 
 -(int)num {
