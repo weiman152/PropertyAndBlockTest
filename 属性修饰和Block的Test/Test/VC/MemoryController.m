@@ -13,8 +13,8 @@ static NSString * name = @"xcode";
 @interface MemoryController ()
 
 @property(nonatomic, assign)int num;
-@property(nonatomic, copy)void (^myBlock)(void);
-@property(nonatomic, copy)void (^blockTest)(void);
+@property(nonatomic, strong)void (^myBlock)(void);
+@property(nonatomic, strong)void (^blockTest)(void);
 
 @end
 
