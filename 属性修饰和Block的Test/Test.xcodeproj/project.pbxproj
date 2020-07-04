@@ -23,6 +23,7 @@
 		3B3FEB52249A193200CB1BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3FEB50249A193200CB1BD2 /* LaunchScreen.storyboard */; };
 		3B3FEB55249A193200CB1BD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3FEB54249A193200CB1BD2 /* main.m */; };
 		3B4D98FA24AC80D70014BDDB /* MemoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D98F924AC80D70014BDDB /* MemoryController.m */; };
+		3B6029B424B0248100A968ED /* BlockDController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6029B324B0248100A968ED /* BlockDController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		3B3FEB54249A193200CB1BD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3B4D98F824AC80D70014BDDB /* MemoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryController.h; sourceTree = "<group>"; };
 		3B4D98F924AC80D70014BDDB /* MemoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryController.m; sourceTree = "<group>"; };
+		3B6029B224B0248100A968ED /* BlockDController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockDController.h; sourceTree = "<group>"; };
+		3B6029B324B0248100A968ED /* BlockDController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockDController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,8 @@
 				3B31BB2C24A8976B0089C69A /* LastPageViewController.m */,
 				3B4D98F824AC80D70014BDDB /* MemoryController.h */,
 				3B4D98F924AC80D70014BDDB /* MemoryController.m */,
+				3B6029B224B0248100A968ED /* BlockDController.h */,
+				3B6029B324B0248100A968ED /* BlockDController.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -207,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B6029B424B0248100A968ED /* BlockDController.m in Sources */,
 				3B31BB3824A8976B0089C69A /* ViewController.m in Sources */,
 				3B31BB3E24A8991F0089C69A /* BlockCController.m in Sources */,
 				3B31BB4124A8998B0089C69A /* BaseViewController.m in Sources */,

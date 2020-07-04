@@ -86,6 +86,17 @@
                                     <action selector="memoryTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W22-W8-Evg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNf-55-3O3">
+                                <rect key="frame" x="20" y="508" width="374" height="44"/>
+                                <color key="backgroundColor" red="0.56546753859999999" green="0.89443300830000005" blue="0.71305711910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7QO-pD-niE"/>
+                                </constraints>
+                                <state key="normal" title="_ _Block探究"/>
+                                <connections>
+                                    <action selector="blockDTest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8kD-Jt-0t6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -99,12 +110,15 @@
                             <constraint firstItem="JXG-6K-D2M" firstAttribute="trailing" secondItem="9sL-A9-iGu" secondAttribute="trailing" id="Rqj-bp-zxm"/>
                             <constraint firstItem="9sL-A9-iGu" firstAttribute="leading" secondItem="5XF-xf-r2w" secondAttribute="leading" id="Vb3-KR-G3L"/>
                             <constraint firstItem="9sL-A9-iGu" firstAttribute="trailing" secondItem="5XF-xf-r2w" secondAttribute="trailing" id="Wav-oY-ktb"/>
+                            <constraint firstItem="PNf-55-3O3" firstAttribute="leading" secondItem="xcH-MP-ITl" secondAttribute="leading" id="b1e-O2-3mG"/>
+                            <constraint firstItem="PNf-55-3O3" firstAttribute="top" secondItem="xcH-MP-ITl" secondAttribute="bottom" constant="20" id="eaj-rZ-pOT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5XF-xf-r2w" secondAttribute="trailing" constant="20" id="fqm-Jd-Pv3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L9b-J2-A0i" secondAttribute="trailing" constant="20" id="lpL-bg-SJ2"/>
                             <constraint firstItem="xcH-MP-ITl" firstAttribute="leading" secondItem="L9b-J2-A0i" secondAttribute="leading" id="lsM-m2-WUx"/>
                             <constraint firstItem="xcH-MP-ITl" firstAttribute="trailing" secondItem="L9b-J2-A0i" secondAttribute="trailing" id="maO-9Z-zEy"/>
                             <constraint firstItem="5XF-xf-r2w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="rtR-jY-yOE"/>
                             <constraint firstItem="L9b-J2-A0i" firstAttribute="top" secondItem="JXG-6K-D2M" secondAttribute="bottom" constant="20" id="tlJ-oA-hGu"/>
+                            <constraint firstItem="PNf-55-3O3" firstAttribute="trailing" secondItem="xcH-MP-ITl" secondAttribute="trailing" id="uav-Fs-V6c"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -321,6 +335,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lm3-w5-eop" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1791.304347826087" y="760.71428571428567"/>
+        </scene>
+        <!--__Block问题研究-->
+        <scene sceneID="zT6-V6-25v">
+            <objects>
+                <viewController storyboardIdentifier="BlockDController" title="__Block问题研究" id="WZl-Ro-Dk4" customClass="BlockDController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZGE-eR-9jn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="FAs-0i-RIg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1AH-j8-hJN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2583" y="777"/>
         </scene>
         <!--BlockTest-->
         <scene sceneID="UR5-Yg-VyD">

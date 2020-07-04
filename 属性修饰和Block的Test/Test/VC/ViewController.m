@@ -11,6 +11,7 @@
 #import "BlockCController.h"
 #import "LastPageViewController.h"
 #import "MemoryController.h"
+#import "BlockDController.h"
 
 @interface ViewController ()
 
@@ -40,6 +41,13 @@
 //    [self test_a];
     
 }
+
+//__Block问题探究
+- (IBAction)blockDTest:(id)sender {
+    BlockDController * dVC = [BlockDController instance];
+    [self.navigationController pushViewController:dVC animated:YES];
+}
+
 
 //内存探究
 - (IBAction)memoryTest:(id)sender {
