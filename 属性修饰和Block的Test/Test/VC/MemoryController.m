@@ -15,6 +15,7 @@ static NSString * name = @"xcode";
 @property(nonatomic, assign)int num;
 @property(nonatomic, strong)void (^myBlock)(void);
 @property(nonatomic, strong)void (^blockTest)(void);
+@property(nonatomic, strong)void (^test2)(void);
 
 @end
 
@@ -143,6 +144,12 @@ static NSString * name = @"xcode";
     NSLog(@"函数中，block作为参数");
     NSLog(@"%@",block);
     block();
+    printf("\n\n");
+    
+    //把参数block赋值给全局变量test2试试
+    self.test2 = block;
+    self.test2();
+    NSLog(@"参数block赋值给全局变量， block: %@, test2: %@", block, self.test2);
     printf("\n\n");
     
     NSLog(@"--访问局部变量的弱引用block");

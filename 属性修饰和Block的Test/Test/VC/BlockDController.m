@@ -21,6 +21,9 @@ int test2(int *a);
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self testC1];
+    /**
+     说明，此验证在另一个项目中BlockDTest
+     */
 }
 
 - (void)testC1 {
